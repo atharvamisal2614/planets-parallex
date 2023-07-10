@@ -1,0 +1,118 @@
+.section-background{
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+background-color: black;
+opacity: 1;
+}
+.text{
+color: white;
+    margin-left:  200px;
+    margin-right: 200px;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.galaxy{
+    opacity: 1;
+    background-image: url("http://3.bp.blogspot.com/-R2P6xKxdB1M/UHZVCE979hI/AAAAAAAALU4/xKFLjtCmKTY/s1600/Galaxy%2BDesktop%2BWallpapers.jpg");
+}
+h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: serif;
+    text-align: center;
+}
+
+.mercury{
+    opacity: 1; 
+    background-image: url("https://wallpapercave.com/wp/wp8779490.jpg");
+}
+.venus{
+    opacity: 1; 
+    background-image: url("https://wallpaperaccess.com/full/116970.jpg");
+}
+.earth{
+    opacity: 1;
+    background-image: url("http://orig14.deviantart.net/5eb3/f/2015/246/4/3/earth_hd_wallpaper_by_moerblx-d9894v0.png");
+}
+.mars{
+        opacity: 1;
+        background-image: url("https://wallpapercave.com/wp/wp9109847.jpg");
+    }
+.jupiter{
+        opacity: 1;
+        background-image: url("https://cdn.wallpapersafari.com/48/84/CtvODB.jpg");
+    }
+    .saturn{
+        opacity: 1;
+        background-image: url("https://wallpapercave.com/wp/wp2708060.jpg");
+    }
+    .uranus{
+        opacity: 1;
+        background-image: url("https://wallpaper.dog/large/20414344.jpg");
+    }
+    .neptune{
+        opacity: 1;
+        background-image: url("https://media.wired.com/photos/5d04045bde1abfe4e801d054/master/w_2560,c_limit/Science-Neptune-FA-PIA01492_orig.jpg?mbid=social_retweet");
+    }
+
+ .slidein{
+    text-align: center;
+    font-size: 40px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+.visible {
+    opacity: 1;
+}
+@keyframes slidein {
+    from{
+        margin-left: 60%;
+    }
+    to{
+        margin-left: 0%;
+        
+    }
+}
+h1{
+    text-align: left;
+    font-size: 50px;
+    animation-duration: 4s;
+    animation-name: fadein;
+    animation-iteration-count: infinite;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*p{
+    margin-left:  200px;
+    margin-right: 200px;
+    font-size: 22px;
+    animation-duration: 3s;
+    animation-name: fadein;
+    animation-iteration-count: infinite;
+}
+@keyframes fadein {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }

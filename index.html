@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+var hiddenTextIDs = ["hiddenText1", "hiddenText2", "hiddenText3","hiddenText4", "hiddenText5", "hiddenText6","hiddenText7", "hiddenText8", "hiddenText9"];
+function revealTextOnScroll() {
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  hiddenTextIDs.forEach(function (id) {
+    var text = document.getElementById(id);
+    if (text) {
+      if (text.offsetTop < scrollPosition + window.innerHeight * 0.75 && !text.classList.contains("visible")) {
+        text.classList.add("visible");
+      } else if (text.offsetTop >= scrollPosition + window.innerHeight * 0.75 && text.classList.contains("visible")) {
+        text.classList.remove("visible");
+      }
+    }
+  });
+}
+window.addEventListener("scroll", revealTextOnScroll);
+
+</script>
+</head>
+<body>
+    <main>
+        <section class="section-background galaxy">
+            <h1>This is our Galaxy</h1><br><br>
+        </section>
+
+        <section class="text" id="hiddenText1">
+            <h3 class="slidein">Our Milkey-Way Galaxy</h3>
+            <p> A galaxy is a sprawling space system which is composed of stars, dust, interstellar gas, stellar remnants,  and dark matter and all held together by gravity. The word ‘Galaxy’ is termed from the Greek word ‘galaxies‘. It is tough to tell how big the universe is! The universe has many galaxies, and each carries millions of stars which a
+                re bounded by a unique force known as gravitational force.  There are approximately 70,000 million stars in the universe. The solar system where our earth exists is in the Milky Way Galaxy.
+                Galaxies differ from each other in shape, size, colour and composition. There are three types of galaxies that we find in the universe.
+                Elliptical Galaxies
+                These type of galaxies are like flattened balls of old stars and contain very little gas. It also includes the most massive galaxies containing a trillion stars.
+                Spiral Galaxies
+                Spiral galaxies have a flattened shape. They have a bulge in the centre composed of old stars surrounded by a disk of young stars and are arranged in spiral arms.
+                Irregular Galaxies
+                As its name suggests, Irregular Galaxies have no particular shape. There are billions of galaxies in the universe, the centre of the galaxy releases a huge amount of heat, radiation, radio waves and x-rays.
+                Galaxies are too far from us, that is, a spacecraft that moves with a speed of 60,000 km/hr reaches Alpha Centauri Galaxy which is 4.2 light-years after 80,000 years. The Milky Way Galaxy includes the sun, earth, and our solar system. It contains dust particles, huge clouds, and gases that lie throughout it and depths of interstellar space. The term Milky Way refers to the large portion of the Milky Way galaxy that can be seen from earth as well.</p>
+            </section>
+        <section class="section-background mercury">
+            <h1>Mercury Planet.</h1>
+        </section>
+        <section class="text" id="hiddenText2">
+            <h3  class="slidein"> Mercury, 1st Planet of the Orbit.</h3>
+            <p> Mercury is the first planet from the Sun and the smallest planet in the Solar System. It is a terrestrial planet with a heavily cratered surface due to the planet having no geological activity and an extremely tenuous atmosphere (called an exosphere). Despite being the smallest planet in the Solar System with a mean diameter of 4,880 km (3,030 mi), 38% of that of Earth's, Mercury is dense enough to have roughly the same surface gravity as Mars. Mercury has a dynamic magnetic field with a strength about 1% of that of Earth's and has no natural satellites.
+                According to current theories, Mercury may have a solid silicate crust and mantle overlying a solid outer core, a deeper liquid core layer, and a solid inner core. Having almost no atmosphere to retain heat, Mercury has surface temperatures that change wildly during the day, ranging from 100 K (−173 °C; −280 °F) at night to 700 K (427 °C; 800 °F) during sunlight across the equator regions.[19] At Mercury's poles though, there are large reservoirs of water ices that are never exposed to direct sunlight, which has an estimated mass of about 0.025–0.25% the Antarctic ice sheet.[20] There are many competing hypotheses about Mercury's origins and development, some of which incorporate collision with planetesimal and rock vaporization</p>
+        </section>
+        <section class="section-background venus">
+            <h1>Venus Planet</h1>
+        </section>
+        <section class="text" id="hiddenText3">
+            <h3 class="slidein">The Venus/Hesperus Planet</h3> 
+        <p>Venus is the second planet from the Sun and is Earth’s closest planetary neighbor. It’s one of the four inner, terrestrial (or rocky) planets, and it’s often called Earth’s twin because it’s similar in size and density. These are not identical twins, however – there are radical differences between the two worlds. Venus has a thick, toxic atmosphere filled with carbon dioxide and it’s perpetually shrouded in thick, yellowish clouds of sulfuric acid that trap heat, causing a runaway greenhouse effect. It’s the hottest planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are about 900 degrees Fahrenheit (475 degrees Celsius) – hot enough to melt lead. The surface is a rusty color and it’s peppered with intensely crunched mountains and thousands of large volcanoes. Scientists think it’s possible some volcanoes are still active.
+        </p>
+    </section>
+        <section class="section-background earth">
+            <h1>Earth Planet</h1>
+        </section>
+<section class="text" id="hiddenText4">
+    <h3 class="slidein">The Living Planet</h3>
+    <p> Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things.While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.
+
+        Earth is the only planet in the Solar System whose English name does not come from Greek or Roman mythology. The name was taken from Old English and Germanic. It simply means "the ground." There are, of course, many names for our planet in the thousands of languages spoken by the people of the third planet from the Sun.</p>
+</section>
+
+        <section class="section-background mars">
+            <h1>Mars Planet</h1>
+        </section>
+
+        <section class="text" id="hiddenText5">
+            <h3 class="slidein">Red Planet</h3>
+            <p>  Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past. Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape.
+
+                NASA currently has two rovers (Curiosity and Perseverance), one lander (InSight), and one helicopter (Ingenuity) exploring the surface of Mars.
+                Perseverance rover – the largest, most advanced rover NASA has sent to another world – touched down on Mars on Feb. 18, 2021, after a 203-day journey traversing 293 million miles (472 million kilometers). The Ingenuity helicopter rode to Mars attached to the belly of Perseverance.</p>
+        </section>
+
+        <section class="section-background jupiter">
+            <h1>Jupiter Planet</h1>
+        </section>
+
+        <section class="text" id="hiddenText6">
+            <h3 class="slidein">The Jove</h3>
+            <p>Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined.
+
+                Jupiter's familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years. upiter has a long history of surprising scientists – all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.</p>
+        </section>
+
+        <section class="section-background saturn">
+            <h1>Saturn Planet</h1>
+        </section>
+
+        <section class="text" id="hiddenText7">
+            <h3 class="slidein">The Shani Planet</h3>
+            <p> Saturn is the sixth planet from the Sun and the second-largest planet in our solar system. Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings – made of chunks of ice and rock – but none are as spectacular or as complicated as Saturn's.
+
+                Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.</p>
+        </section>
+
+        <section class="section-background uranus">
+            <h1>Uranus Planet</h1>
+        </section>
+
+        <section class="text" id="hiddenText8">
+            <h3 class="slidein">The George's Star</h3>
+            <p>Uranus is the seventh planet from the Sun, and has the third-largest diameter in our solar system. It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star. It was two years later that the object was universally accepted as a new planet, in part because of observations by astronomer Johann Elert Bode. Herschel tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead, the scientific community accepted Bode's suggestion to name it Uranus, the Greek god of the sky, as suggested by Bode.​</p>
+        </section>
+
+        <section class="section-background neptune">
+            <h1>Neptune Planet</h1>
+        </section>
+
+        <section class="text" id="hiddenText9">
+            <h3 class="slidein">The Le Verrier's Planet</h3>
+            <p>Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations. Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system. More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.</p>
+        </section>
+    </main>
+</body>
+</html>
